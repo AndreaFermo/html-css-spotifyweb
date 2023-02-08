@@ -22,7 +22,7 @@ box-sizing: border-box;
     background-color: burlywood;
 }
 
-.debug footer {
+.debug #site-footer {
     background-color: black;
 }
 
@@ -49,6 +49,14 @@ box-sizing: border-box;
     height: 300px;
 }
 
+.debug .sdbr {
+    background-color: white;
+}
+
+.debug .playlist {
+    display: none;
+}
+
 /*UTILITY*/
 
 .d-flex {
@@ -65,12 +73,15 @@ main {
     height: calc(100vh - 6rem);
 }
 
-footer {
+#site-footer {
     height: 6rem;
 }
 
 .sidebar {
     width: 3rem;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
 }
 
 #cta {
@@ -111,6 +122,10 @@ footer {
         width: calc(100% -9rem);
        
     } 
+
+    .debug .playlist {
+        display: block;
+    }
 }
 
 @media screen and (min-width: 768px) {
