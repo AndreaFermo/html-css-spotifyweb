@@ -14,6 +14,10 @@ box-sizing: border-box;
     border: 3px dashed white;
 }
 
+.debug .bb {
+    border: 3px dashed black;
+}
+
 .debug main {
     background-color: burlywood;
 }
@@ -35,10 +39,24 @@ box-sizing: border-box;
     height: 4rem;
 }
 
+.debug .col-container {
+    background-color: bisque;
+    
+}
+
+.debug .col-container .col {
+    background-color: lightcyan;
+    height: 300px;
+}
+
 /*UTILITY*/
 
 .d-flex {
     display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
 }
 
 /*CSS*/
@@ -65,10 +83,16 @@ footer {
 
 .content {
    width: calc(100% - 3rem);
+   overflow-y: scroll;
 }
 
 .navbar {
-    margin-top: 7rem;
+    margin: 7rem 0 1rem;
+}
+
+.col-container .col {
+    width: calc(50% - 2rem);
+    margin: 1rem;
 }
 
 /*RESPONDIVE*/
@@ -87,4 +111,26 @@ footer {
         width: calc(100% -9rem);
        
     } 
+}
+
+@media screen and (min-width: 768px) {
+    
+    .col-container .col {
+        width: calc(25% - 2rem);
+        margin: 1rem;
+    }
+
+
+   
+}
+
+@media screen and (min-width: 992px) {
+    
+    .col-container .col {
+        width: calc((100% / 6) - 2rem);
+        margin: 1rem;
+    }
+
+
+   
 }
