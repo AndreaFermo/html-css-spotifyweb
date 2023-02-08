@@ -3,3 +3,76 @@ padding: 0;
 margin: 0;
 box-sizing: border-box;
 }
+
+/*DEBUG*/
+
+.debug .blg {
+    border: 3px dashed lightgreen;
+}
+
+.debug .bw {
+    border: 3px dashed white;
+}
+
+.debug main {
+    background-color: burlywood;
+}
+
+.debug footer {
+    background-color: black;
+}
+
+.debug aside {
+    background-color: aqua;
+}
+
+.debug .content {
+    background-color: coral;
+}
+
+.debug .navbar {
+    background-color: pink;
+    height: 4rem;
+}
+
+/*UTILITY*/
+
+.d-flex {
+    display: flex;
+}
+
+/*CSS*/
+
+main {
+    height: calc(100vh - 6rem);
+}
+
+footer {
+    height: 6rem;
+}
+
+aside {
+    width: 3rem;
+}
+
+#cta {
+    position: fixed;
+    top: 0;
+    left: 3rem;
+    width: calc(100% - 3rem);
+    line-height: 6rem;
+}
+
+.content {
+   width: calc(100% - 3rem);
+}
+
+.navbar {
+    margin-top: 7rem;
+}
+
+/*RESPONDIVE*/
+
+@media screen and (min-with: 576px) {
+    
+}
