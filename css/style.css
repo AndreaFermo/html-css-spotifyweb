@@ -22,7 +22,7 @@ box-sizing: border-box;
     background-color: black;
 }
 
-.debug aside {
+.debug .sidebar {
     background-color: aqua;
 }
 
@@ -51,7 +51,7 @@ footer {
     height: 6rem;
 }
 
-aside {
+.sidebar {
     width: 3rem;
 }
 
@@ -73,6 +73,18 @@ aside {
 
 /*RESPONDIVE*/
 
-@media screen and (min-with: 576px) {
-    
+@media screen and (min-width: 576px) {
+    .sidebar {
+        width: 9rem;
+    }
+
+    .content {
+        width: calc(100% - 9rem);
+     }
+
+     #cta {
+        left: 9rem;
+        width: calc(100% -9rem);
+       
+    } 
 }
