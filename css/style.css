@@ -23,15 +23,8 @@ box-sizing: border-box;
 }
 
 .debug #site-footer {
-    background-color: black;
+    background-color: white;
 }
-
-
-
-
-
-
-
 
 .debug .playlist {
     display: none;
@@ -313,7 +306,66 @@ section h3 {
     color: var(--colorgray);
 }
 
+/*FOOTER*/
 
+#site-footer {
+    padding: 1rem 0.5rem;
+}
+
+#site-footer img {
+    height: 100%;
+}
+
+.footCol {
+    height: 100%;
+    align-items: center;
+    gap: 0.5rem;
+    width: 20%;
+}
+
+#site-footer i {
+    margin: 0.3rem;
+}
+
+.footCenter i {
+    font-size: 1.5rem;
+    padding: 0 0.5rem;
+}
+
+#play {
+    font-size: 2rem;
+}
+
+.footCenter {
+   flex-direction: column;
+   justify-content: center;
+   width: 60%;
+}
+
+.pbarContainer {
+    width: 100%;
+    justify-content: center;
+}
+
+.footCenter .progressionBar {
+    width: 70%;
+    border-radius: 1rem;
+    background-color: var(--colorgray);
+    height: 0.4rem;
+    margin: 0 2rem;
+ }
+
+ .colLeft .progressionBar {
+    width: 80%;
+    border-radius: 1rem;
+    background-color: var(--colorgray);
+    height: 0.4rem;
+    margin: 0 2rem;
+ }
+
+ #site-footer .colLeft {
+   justify-content: right;
+ }
 
 /*RESPONDIVE*/
 
