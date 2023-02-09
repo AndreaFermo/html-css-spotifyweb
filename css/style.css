@@ -67,6 +67,10 @@ box-sizing: border-box;
     flex-wrap: wrap;
 }
 
+ul {
+    list-style: none;
+}
+
 /*CSS*/
 
 main {
@@ -77,12 +81,7 @@ main {
     height: 6rem;
 }
 
-.sidebar {
-    width: 3rem;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-}
+
 
 #cta {
     position: fixed;
@@ -105,6 +104,34 @@ main {
     width: calc(50% - 2rem);
     margin: 1rem;
 }
+
+/*SIDEBAR*/
+
+.sidebar {
+    width: 3rem;
+    overflow-y: hidden;
+    
+}
+
+.sdbr-main {
+    height: calc(100% - 3rem);
+    overflow-y: hidden;
+    min-height: 200px;
+    flex-direction: column;
+}
+
+.sdbr-footer {
+    height: 3rem;
+    overflow-y: hidden;
+}
+
+
+
+.sidebar .playL ul {
+    overflow-y: scroll;
+}
+
+
 
 /*RESPONDIVE*/
 
