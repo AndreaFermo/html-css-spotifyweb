@@ -50,7 +50,7 @@ box-sizing: border-box;
 }
 
 .debug .sdbr {
-    background-color: white;
+    background-color: rgb(243, 144, 144);
 }
 
 .debug .playlist {
@@ -67,8 +67,42 @@ box-sizing: border-box;
     flex-wrap: wrap;
 }
 
+.flex-col {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.overflow-hidden {
+    overflow-y: hidden;
+}
+
 ul {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.padding-05 {
+    padding: 0.5rem;
+}
+
+.padding-1 {
+    padding: 1rem;
+}
+
+.padding-2 {
+    padding: 2rem;
+}
+
+.padding-3 {
+    padding: 3rem;
+}
+
+.bleftg {
+    border-left: 0.3rem solid green;
 }
 
 /*CSS*/
@@ -107,25 +141,48 @@ main {
 
 /*SIDEBAR*/
 
+
+.logo img {
+    height: 2rem;
+}
+
+.bigLogo {
+    display: none;
+}
+
+ul img {
+    height: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .sidebar {
     width: 3rem;
-    overflow-y: hidden;
+
     
 }
 
 .sdbr-main {
     height: calc(100% - 3rem);
-    overflow-y: hidden;
-    min-height: 200px;
-    flex-direction: column;
+    min-height: 21rem;
 }
 
 .sdbr-footer {
     height: 3rem;
-    overflow-y: hidden;
+    
 }
-
-
 
 .sidebar .playL ul {
     overflow-y: scroll;
