@@ -26,10 +26,6 @@ box-sizing: border-box;
     background-color: black;
 }
 
-.debug .sidebar {
-    background-color: aqua;
-}
-
 .debug .content {
     background-color: coral;
 }
@@ -49,9 +45,7 @@ box-sizing: border-box;
     height: 300px;
 }
 
-.debug .sdbr {
-    background-color: rgb(243, 144, 144);
-}
+
 
 .debug .playlist {
     display: none;
@@ -147,6 +141,10 @@ main {
 
 /*SIDEBAR*/
 
+.sidebar {
+    background-color: black;
+}
+
 .logo img {
     height: 2rem;
 }
@@ -160,7 +158,8 @@ main {
 }
 
 .functions ul li img {
-    height: 2rem;
+    height: 1.5rem;
+    padding-right: 0.5rem;
 }
 
 .functions ul li span {
@@ -196,41 +195,74 @@ main {
     height: 0.1rem;
     background-color: var(--colorgray);
 }
- 
 
- 
+.sdbr-footer span {
+    display: none;
+}
 
+.sdbr-footer .grayline {
+    display: none;
+}
 
+.sdbr-footer .downloadContainer {
+    justify-content: center;
+}
 
+/*padding sidebar elements*/
 
+.sidebar .logo {
+    padding-bottom: 2rem;
+}
 
+.sidebar .functions li {
+    padding-bottom: 0.5rem;
+}
 
+.sidebar footer .profileContainer {
+    padding-top: 1rem;
+}
 
+.sidebar footer .grayline {
+    margin-top: 1rem;
+}
 
+.sidebar h3 {
+    padding: 0.5rem 0;
+}
 
+.sidebar li {
+    padding-bottom: 0.5rem;
+}
 
+.sidebar footer span {
+    padding-left: 0.5rem;
+}
 
-
+.fa-square-plus {
+    padding-right: 0.5rem;
+}
 
 
 
 
 .sidebar {
     width: 3rem;
+}
 
-    
+.sidebar {
+    padding: 0.5rem 0 0;
 }
 
 .sdbr-main {
     height: calc(100% - 6rem);
-    min-height: 15rem;
+    min-height: 19rem;
 }
 
 .sdbr-footer {
     height: 6rem;
-    width: 100%;
-    
 }
+
+
 
 
 
@@ -240,7 +272,7 @@ main {
 
 @media screen and (min-width: 576px) {
     .sidebar {
-        width: 9rem;
+        width: 10rem;
         align-items: start;
     }
     
@@ -250,8 +282,8 @@ main {
      }
 
      #cta {
-        left: 9rem;
-        width: calc(100% -9rem);
+        left: 10rem;
+        width: calc(100% -10rem);
        
     } 
 
@@ -265,15 +297,41 @@ main {
 
     .playL {
         display: flex;
-     }
+    }
 
-     .sidebar .playL ul {
+    .sidebar .playL ul {
         overflow-y: scroll;
     }
 
-     .functions ul li span {
+    .functions ul li span {
         display: inline-block;
-     }
+    }
+
+    .sdbr-footer span {
+        display: inline;
+    }
+
+    .sdbr-footer {
+        width: 100%;
+    }
+
+    .sdbr-footer .grayline {
+        display: block;
+    }
+
+    .sdbr-footer .downloadContainer {
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .sidebar {
+        padding: 0.5rem 0.5rem 0;
+    }
+
+   
+
+
+     
 }
 
 @media screen and (min-width: 768px) {
