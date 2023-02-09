@@ -39,6 +39,10 @@ box-sizing: border-box;
 
 /*UTILITY*/
 
+html {
+    font-family: sans-serif;
+}
+
 /*colors*/
 
 :root {
@@ -106,9 +110,20 @@ main {
 #cta {
     position: fixed;
     top: 0;
-    left: 3rem;
+    right: 0;
     width: calc(100% - 3rem);
-    line-height: 6rem;
+    line-height: 5rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: right;
+}
+
+#cta a {
+    color: var(--colorwhite);
+    margin: 0 0.2rem;
+    border: 0.1rem solid var(--colorwhite);
+    padding: 0.5rem 2rem;
+    border-radius: 3rem;
+    font-size: 0.8rem;
 }
 
 .content {
@@ -270,13 +285,15 @@ main {
 
 section h2 {
     color: var(--colorwhite);
-    padding-left: 1rem;
-    padding-top: 1rem;
+    padding: 1rem;
+   
 }
 
 section h3 {
     color: var(--colorgray);
     padding-left: 1rem;
+    font-size: 0.8rem;
+   
 }
 
 .col img {
@@ -295,8 +312,6 @@ section h3 {
 .col span {
     color: var(--colorgray);
 }
-
-
 
 
 
@@ -358,6 +373,10 @@ section h3 {
 
     .sidebar {
         padding: 0.5rem 0.5rem 0;
+    }
+
+    #cta {
+        width: calc(100% - 10rem);
     }
 
    
