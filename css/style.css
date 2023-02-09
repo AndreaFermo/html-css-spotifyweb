@@ -147,7 +147,6 @@ main {
 
 /*SIDEBAR*/
 
-
 .logo img {
     height: 2rem;
 }
@@ -162,19 +161,41 @@ main {
 
 .functions ul li img {
     height: 2rem;
- }
+}
 
- .functions ul li span {
+.functions ul li span {
     display: none;
- }
+}
 
- .playL {
+.playL {
     display: none;
- }
+}
 
- .playL i {
+.playL i {
     font-size: 2rem;
- }
+}
+
+.sdbr-footer a .download {
+    height: 1rem;
+}
+
+.sdbr-footer .wrapper {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: var(--colorgray);
+    object-fit: cover;
+}
+
+ .sdbr-footer a .profile {
+    height: 100%;
+    padding: 0.3rem;
+}
+
+.sdbr-footer .grayline {
+    height: 0.1rem;
+    background-color: var(--colorgray);
+}
  
 
  
@@ -201,12 +222,13 @@ main {
 }
 
 .sdbr-main {
-    height: calc(100% - 3rem);
+    height: calc(100% - 6rem);
     min-height: 15rem;
 }
 
 .sdbr-footer {
-    height: 3rem;
+    height: 6rem;
+    width: 100%;
     
 }
 
