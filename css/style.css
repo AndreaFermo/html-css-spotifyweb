@@ -6,29 +6,8 @@ box-sizing: border-box;
 
 /*DEBUG*/
 
-.debug .blg {
-    border: 3px dashed lightgreen;
-}
 
-.debug .bw {
-    border: 3px dashed white;
-}
 
-.debug .bb {
-    border: 3px dashed black;
-}
-
-.debug .footCol {
-    background-color: pink;
-}
-
-.debug main {
-    width: 100%;
-}
-
-.debug #site-footer {
-    background-color: white;
-}
 
 
 
@@ -108,8 +87,6 @@ main {
     height: 6rem;
 }
 
-
-
 #cta {
     position: fixed;
     top: 0;
@@ -167,6 +144,16 @@ main {
 
 .functions ul li span {
     padding-left: 0.5rem;
+    display: none;
+}
+
+.verticalGL {
+    height: 1.5rem;
+    width: 0.1rem;
+    background-color: #b4f730;
+    position: absolute;
+    top: 5rem;
+    left: 0;
     display: none;
 }
 
@@ -289,6 +276,17 @@ main {
     font-weight: bold;
 }
 
+.horizzontalL {
+    height: 0.1rem;
+    width: 3rem;
+}
+
+.horizzontalGL {
+    height: 0.1rem;
+    width: 3rem;
+    background-color: #b4f730;
+}
+
 section h2 {
     color: var(--colorwhite);
     padding: 1rem;
@@ -322,6 +320,10 @@ section h3 {
 /*FOOTER*/
 
 #site-footer {
+    background-color: #282828;
+}
+
+#site-footer {
     padding: 1rem 0.5rem;
 }
 
@@ -330,7 +332,7 @@ section h3 {
 }
 
 #site-footer  .footLeft , #site-footer  .footRight {
-    width: 12rem;
+    width: 15rem;
 }
 
 #site-footer .footCenter {
@@ -346,25 +348,27 @@ section h3 {
 }
 
 #site-footer .playStatus , #site-footer .duration {
-    width: 15%;
-    text-align: center;
+    width: 20%;
 }
 
+#site-footer .duration {
+    text-align: right;
+}
 
 #site-footer .playerControl {
-   width: 70%;
+   width: 80%;
 }
 
 .slider {
     height: 0.4rem;
-    background-color: black;
+    background-color: var(--colorgray);
     border-radius: 0.2rem;
 }
 
 .progression {
     width: 20%;
     height: 100%;
-    background-color: red;
+    background-color: #c1c1c1;
     border-radius: 0.2rem;
     position: relative;
 }
@@ -380,17 +384,28 @@ section h3 {
 }
 
 .fastFunctions {
-    width: 40%;
+    width: 50%;
 }
 
 .volume {
-    width: 60%;
+    width: 50%;
 }
 
 #site-footer .footRight .playerControl {
     width: 100%;
 }
 
+#site-footer i {
+    padding: 0.3rem;
+}
+
+#site-footer .fa-circle-play {
+    font-size: 1.5rem;
+}
+
+.playNav {
+    width: 10rem;
+}
 
 
 /*RESPONDIVE*/
@@ -419,6 +434,10 @@ section h3 {
 
     .smlLogo {
         display: none;
+    }
+
+    .verticalGL {
+        display: block;
     }
 
     .playL {

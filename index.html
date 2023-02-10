@@ -16,7 +16,7 @@
                 <div class="logo"><img src="img/logo-small.svg" alt="logo-small Spotify" class="smlLogo"><img src="img/logo.svg" alt="logo Spotify" class="bigLogo"></div>
                 <div class="functions d-flex flex-center flex-jcenter">
                     <ul>
-                        <li><a href="#" class="d-flex flex-center textwhite"><img src="img/home.svg" alt="home"><span>Home</span></a></li>
+                        <li><a href="#" class="d-flex flex-center textwhite"><div class="verticalGL"></div><img src="img/home.svg" alt="home"><span>Home</span></a></li>
                         <li><a href="#" class="d-flex flex-center textgray"><img src="img/search.svg" alt="lente"><span>Cerca</span></a></li>
                         <li><a href="#" class="d-flex flex-center textgray"><img src="img/libreria.svg" alt="home"><span>La tua libreria</span></a></li>
                     </ul>
@@ -49,12 +49,12 @@
         <div class="content ">
             <nav class="navbar ">
                 <ul class="d-flex">
-                    <li><a href="#">IN VIDENZA</a></li>
-                    <li><a href="#">PODCAST</a></li>
-                    <li><a href="#">CLASSIFICHE</a></li>
-                    <li><a href="#">GENERI E MOOD</a></li>
-                    <li><a href="#">NUOVE USCITE</a></li>
-                    <li><a href="#">SCOPRI</a></li>
+                    <li class="d-flex flex-col flex-center"><a href="#">IN EVIDENZA</a><div class="horizzontalGL"></div></li>
+                    <li class="d-flex flex-col flex-center"><a href="#">PODCAST</a><div class="horizzontalL"></div></li>
+                    <li class="d-flex flex-col flex-center"><a href="#">CLASSIFICHE</a><div class="horizzontalL"></div></li>
+                    <li class="d-flex flex-col flex-center"><a href="#">GENERI E MOOD</a><div class="horizzontalL"></div></li>
+                    <li class="d-flex flex-col flex-center"><a href="#">NUOVE USCITE</a><div class="horizzontalL"></div></li>
+                    <li class="d-flex flex-col flex-center"><a href="#">SCOPRI</a><div class="horizzontalL"></div></li>
                 </ul>
             </nav>
             <section id="recent">
@@ -146,29 +146,29 @@
 
     </main>
 
-    <footer id="site-footer" class="d-flex flex-spcbtw blg">
+    <footer id="site-footer" class="d-flex flex-spcbtw">
         <div class="footCol footLeft d-flex flex-center flex-spcbtw">
             <img src="img/sinister.jpeg" alt="Sinister Album">
             <div>
-                <div>Sinister</div>
-                <div>Brano Name</div>
+                <div class="textwhite">Sinister</div>
+                <div class="textgray">Brano Name</div>
             </div>
             <div>
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-regular fa-folder"></i>
+                <i class="fa-regular fa-heart textgray"></i>
+                <i class="fa-regular fa-folder textgray"></i>
             </div>
         </div>
 
         <div class="footCol footCenter d-flex flex-col flex-center flex-jcenter">
-            <div>
-                <i class="fa-solid fa-shuffle"></i>
-                <i class="fa-solid fa-backward-step"></i>
-                <i class="fa-regular fa-circle-play"></i>
-                <i class="fa-solid fa-forward-step"></i>
-                <i class="fa-solid fa-arrow-rotate-right"></i>
+            <div class="playNav d-flex flex-center flex-spcbtw">
+                <i class="fa-solid fa-shuffle textwhite"></i>
+                <i class="fa-solid fa-backward-step textwhite"></i>
+                <i class="fa-regular fa-circle-play textwhite"></i>
+                <i class="fa-solid fa-forward-step textwhite"></i>
+                <i class="fa-solid fa-arrow-rotate-right textwhite"></i>
             </div>
             <div class="player d-flex flex-center">
-                <div class="playStatus">0:25</div>
+                <div class="playStatus textwhite">0:25</div>
                 <div class="playerControl">
                     <div class="slider">
                         <div class="progression">
@@ -176,16 +176,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="duration">4:35</div>
+                <div class="duration textwhite">4:35</div>
             </div>
             
             
         </div>
         <div class="footCol footRight d-flex flex-center">
             <div class="fastFunctions">
-            <i class="fa-solid fa-list"></i>
-            <i class="fa-solid fa-display"></i>
-            <i class="fa-solid fa-volume-high"></i>
+            <i class="fa-solid fa-list textwhite"></i>
+            <i class="fa-solid fa-display textwhite"></i>
+            <i class="fa-solid fa-volume-high textwhite"></i>
             </div>
             <div class="volume">
                 <div class="playerControl">
