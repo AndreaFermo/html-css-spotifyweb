@@ -6,7 +6,9 @@ box-sizing: border-box;
 
 /*DEBUG*/
 
-
+.rounded {
+    border-radius: 50%;
+}
 
 
 
@@ -405,6 +407,48 @@ section h3 {
 
 .playNav {
     width: 10rem;
+}
+
+/*EFFECTS*/
+
+.imgEffectContainer {
+    position: relative;
+}
+
+.imgEffect {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.imgEffectrounded {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    border-radius: 50%;
+}
+
+.imgEffect i , .imgEffectrounded i {
+    font-size: 3rem;
+}
+
+.imgEffect:hover , .imgEffectrounded:hover {
+
+    opacity: 1;
 }
 
 
