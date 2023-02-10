@@ -464,6 +464,7 @@ section h3 {
 
 .ctaContainer {
     margin-right: 3rem;
+    display: inline-block;
 }
 
 
