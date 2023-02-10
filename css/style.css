@@ -30,9 +30,7 @@ box-sizing: border-box;
     background-color: white;
 }
 
-.debug .playlist {
-    display: none;
-}
+
 
 /*UTILITY*/
 
@@ -124,7 +122,7 @@ main {
 
 #cta a {
     color: var(--colorwhite);
-    margin: 0 0.2rem;
+    margin: 0 1.5rem;
     border: 0.1rem solid var(--colorwhite);
     padding: 0.5rem 2rem;
     border-radius: 3rem;
@@ -174,6 +172,10 @@ main {
 
 .playL {
     display: none;
+}
+
+.addPl {
+    margin-bottom: 0.5rem;
 }
 
 .playL i {
@@ -344,13 +346,13 @@ section h3 {
 }
 
 #site-footer .playStatus , #site-footer .duration {
-    width: 10%;
+    width: 15%;
     text-align: center;
 }
 
 
 #site-footer .playerControl {
-   width: 80%;
+   width: 70%;
 }
 
 .slider {
@@ -377,6 +379,17 @@ section h3 {
     top: -0.1rem;
 }
 
+.fastFunctions {
+    width: 40%;
+}
+
+.volume {
+    width: 60%;
+}
+
+#site-footer .footRight .playerControl {
+    width: 100%;
+}
 
 
 
@@ -385,13 +398,13 @@ section h3 {
 @media screen and (min-width: 576px) {
 
     .sidebar {
-        width: 10rem;
+        width: 12rem;
         align-items: start;
     }
     
 
     .content {
-        width: calc(100% - 9rem);
+        width: calc(100% - 12rem);
     }
 
     #cta {
