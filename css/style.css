@@ -107,6 +107,11 @@ main {
     font-size: 0.8rem;
 }
 
+.ctaContainer {
+    margin-right: 3rem;
+    display: inline-block;
+}
+
 .content {
    width: calc(100% - 3rem);
    overflow-y: scroll;
@@ -378,10 +383,11 @@ section h3 {
     height: 0.6rem;
     width: 0.6rem;
     border-radius: 50%;
-    background-color: green;
     position: absolute;
     right: 0;
     top: -0.1rem;
+    display: none;
+    background-color: white;
 }
 
 .fastFunctions {
@@ -454,12 +460,17 @@ section h3 {
     color: var(--colorwhite);
 }
 
+.hoverunderline:hover {
+    text-decoration: underline;
+}
+
+
 .grow { 
     transition: transform .2s; 
 }
 
 .grow:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 .ctaContainer {
@@ -467,6 +478,13 @@ section h3 {
     display: inline-block;
 }
 
+.slider:hover .progression {
+    background-color: #b4f730;
+}
+
+.slider:hover .progressionDot {
+    display: block;
+}
 
 /*RESPONSIVE*/
 
