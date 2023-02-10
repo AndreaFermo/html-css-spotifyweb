@@ -18,8 +18,12 @@ box-sizing: border-box;
     border: 3px dashed black;
 }
 
+.debug .footCol {
+    background-color: pink;
+}
+
 .debug main {
-    background-color: burlywood;
+    width: 100%;
 }
 
 .debug #site-footer {
@@ -67,6 +71,14 @@ html {
 
 .flex-center {
     align-items: center;
+}
+
+.flex-spcbtw {
+    justify-content: space-between;
+}
+
+.flex-jcenter {
+    justify-content: center;
 }
 
 /*others*/
@@ -153,10 +165,10 @@ main {
 
 .functions ul li img {
     height: 1.5rem;
-    padding-right: 0.5rem;
 }
 
 .functions ul li span {
+    padding-left: 0.5rem;
     display: none;
 }
 
@@ -180,7 +192,7 @@ main {
     object-fit: cover;
 }
 
- .sdbr-footer a .profile {
+.sdbr-footer a .profile {
     height: 100%;
     padding: 0.3rem;
 }
@@ -200,6 +212,7 @@ main {
 
 .sdbr-footer .downloadContainer {
     justify-content: center;
+    margin-bottom: 1rem;
 }
 
 /*padding sidebar elements*/
@@ -212,12 +225,13 @@ main {
     padding-bottom: 0.5rem;
 }
 
-.sidebar footer .profileContainer {
+.sidebar .s .profileContainer {
     padding-top: 1rem;
 }
 
-.sidebar footer .grayline {
-    margin-top: 1rem;
+.sdbr-footer .grayline {
+    margin-bottom: 0.5rem;
+
 }
 
 .sidebar h3 {
@@ -228,7 +242,7 @@ main {
     padding-bottom: 0.5rem;
 }
 
-.sidebar footer span {
+.sdbr-footer span {
     padding-left: 0.5rem;
 }
 
@@ -238,19 +252,16 @@ main {
 
 .sidebar {
     width: 3rem;
-}
-
-.sidebar {
-    padding: 0.5rem 0 0;
+    padding: 1rem 0 0;
 }
 
 .sdbr-main {
-    height: calc(100% - 6rem);
+    height: calc(100% - 5rem);
     min-height: 19rem;
 }
 
 .sdbr-footer {
-    height: 6rem;
+    height: 5rem;
 }
 
 /*CONTENT*/
@@ -312,64 +323,67 @@ section h3 {
     padding: 1rem 0.5rem;
 }
 
-#site-footer img {
+#site-footer  .footCol {
     height: 100%;
 }
 
-.footCol {
+#site-footer  .footLeft , #site-footer  .footRight {
+    width: 12rem;
+}
+
+#site-footer .footCenter {
+    width: 40%;
+}
+
+#site-footer  .footLeft img {
     height: 100%;
-    align-items: center;
-    gap: 0.5rem;
-    width: 20%;
 }
 
-#site-footer i {
-    margin: 0.3rem;
-}
-
-.footCenter i {
-    font-size: 1.5rem;
-    padding: 0 0.5rem;
-}
-
-#play {
-    font-size: 2rem;
-}
-
-.footCenter {
-   flex-direction: column;
-   justify-content: center;
-   width: 60%;
-}
-
-.pbarContainer {
+#site-footer .player{
     width: 100%;
-    justify-content: center;
 }
 
-.footCenter .progressionBar {
-    width: 70%;
-    border-radius: 1rem;
-    background-color: var(--colorgray);
-    height: 0.4rem;
-    margin: 0 2rem;
- }
+#site-footer .playStatus , #site-footer .duration {
+    width: 10%;
+    text-align: center;
+}
 
- .colLeft .progressionBar {
-    width: 80%;
-    border-radius: 1rem;
-    background-color: var(--colorgray);
-    height: 0.4rem;
-    margin: 0 2rem;
- }
 
- #site-footer .colLeft {
-   justify-content: right;
- }
+#site-footer .playerControl {
+   width: 80%;
+}
+
+.slider {
+    height: 0.4rem;
+    background-color: black;
+    border-radius: 0.2rem;
+}
+
+.progression {
+    width: 20%;
+    height: 100%;
+    background-color: red;
+    border-radius: 0.2rem;
+    position: relative;
+}
+
+.progressionDot {
+    height: 0.6rem;
+    width: 0.6rem;
+    border-radius: 50%;
+    background-color: green;
+    position: absolute;
+    right: 0;
+    top: -0.1rem;
+}
+
+
+
 
 /*RESPONDIVE*/
 
 @media screen and (min-width: 576px) {
+
     .sidebar {
         width: 10rem;
         align-items: start;
@@ -378,9 +392,9 @@ section h3 {
 
     .content {
         width: calc(100% - 9rem);
-     }
+    }
 
-     #cta {
+    #cta {
         left: 10rem;
         width: calc(100% -10rem);
        
@@ -424,7 +438,7 @@ section h3 {
     }
 
     .sidebar {
-        padding: 0.5rem 0.5rem 0;
+        padding: 1rem 0.5rem 0;
     }
 
     #cta {

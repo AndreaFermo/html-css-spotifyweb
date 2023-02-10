@@ -14,7 +14,7 @@
         <aside class="sidebar d-flex overflow-hidden flex-col flex-center">
             <div class="sdbr d-flex flex-col overflow-hidden sdbr-main">
                 <div class="logo"><img src="img/logo-small.svg" alt="logo-small Spotify" class="smlLogo"><img src="img/logo.svg" alt="logo Spotify" class="bigLogo"></div>
-                <div class="functions">
+                <div class="functions d-flex flex-center flex-jcenter">
                     <ul>
                         <li><a href="#" class="d-flex flex-center textwhite"><img src="img/home.svg" alt="home"><span>Home</span></a></li>
                         <li><a href="#" class="d-flex flex-center textgray"><img src="img/search.svg" alt="lente"><span>Cerca</span></a></li>
@@ -35,11 +35,11 @@
                     </ul>
                 </div>    
             </div>
-            <footer class="sdbr sdbr-footer ">
+            <div class="sdbr sdbr-footer">
                 <a href="#" class="downloadContainer textgray d-flex"><img src="img/download.svg" alt="download" class="download"><span> Installa app</span></a>
                 <div class="grayline"></div>
                 <a href="#" class="profileContainer d-flex flex-center"><div class="wrapper"><img src="img/profile.svg" alt="profile" class="profile"></div><span class="textwhite">John Doe</span></a>
-            </footer>
+            </div>
         </aside>
 
         <div id="cta" class="bw">
@@ -146,38 +146,60 @@
 
     </main>
 
-    <footer id="site-footer" class="d-flex flex-center blg">
-        <div class="footCol footleft d-flex">
-            <img src="img/sinister.jpeg" alt="">
+    <footer id="site-footer" class="d-flex flex-spcbtw blg">
+        <div class="footCol footLeft d-flex flex-center flex-spcbtw">
+            <img src="img/sinister.jpeg" alt="Sinister Album">
             <div>
-                <h4>Sinister</h4>
-                <span>Brano name</span>
+                <div>Sinister</div>
+                <div>Brano Name</div>
             </div>
-            <div class="d-flex wrap">
+            <div>
                 <i class="fa-regular fa-heart"></i>
                 <i class="fa-regular fa-folder"></i>
-            </div>                
+            </div>
         </div>
-        <div class="footCol footCenter d-flex">
-            <div class="d-flex flex-center">
+
+        <div class="footCol footCenter d-flex flex-col flex-center flex-jcenter">
+            <div>
                 <i class="fa-solid fa-shuffle"></i>
                 <i class="fa-solid fa-backward-step"></i>
-                <i id="play" class="fa-sharp fa-regular fa-circle-play"></i>
+                <i class="fa-regular fa-circle-play"></i>
                 <i class="fa-solid fa-forward-step"></i>
-                <i class="fa-sharp fa-solid fa-rotate-right"></i>
+                <i class="fa-solid fa-arrow-rotate-right"></i>
             </div>
-            <div class="pbarContainer d-flex flex-center">
-                <span>0:25</span>
-                <div class="progressionBar"></div>
-                <span>4:35</span>
+            <div class="player d-flex flex-center">
+                <div class="playStatus">0:25</div>
+                <div class="playerControl">
+                    <div class="slider">
+                        <div class="progression">
+                            <div class="progressionDot"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="duration">4:35</div>
             </div>
+            
+            
         </div>
-        <div class="footCol colLeft d-flex">
+        <div class="footCol footRight d-flex">
+            <div>
             <i class="fa-solid fa-list"></i>
-            <i class="fa-solid fa-desktop"></i>
+            <i class="fa-solid fa-display"></i>
             <i class="fa-solid fa-volume-high"></i>
-            <div class="progressionBar"></div>
+            </div>
+            <div>
+                <div class="playerControl">
+                    <div class="slider">
+                        <div class="progression">
+                            <div class="progressionDot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+      
+         
+         
     </footer>
 </body>
 </html>
