@@ -451,8 +451,20 @@ section h3 {
     opacity: 1;
 }
 
+.hoverwhite:hover {
+    color: var(--colorwhite);
+}
 
-/*RESPONDIVE*/
+.grow { 
+    transition: all .2s; 
+}
+
+.grow:hover {
+    transform: scale(1.3);
+}
+
+
+/*RESPONSIVE*/
 
 @media screen and (min-width: 576px) {
 
