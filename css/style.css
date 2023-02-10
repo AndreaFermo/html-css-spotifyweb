@@ -101,7 +101,6 @@ main {
 
 #cta a {
     color: var(--colorwhite);
-    margin: 0 1.5rem;
     border: 0.1rem solid var(--colorwhite);
     padding: 0.5rem 2rem;
     border-radius: 3rem;
@@ -456,11 +455,15 @@ section h3 {
 }
 
 .grow { 
-    transition: all .2s; 
+    transition: transform .2s; 
 }
 
 .grow:hover {
-    transform: scale(1.3);
+    transform: scale(1.05);
+}
+
+.ctaContainer {
+    margin-right: 3rem;
 }
 
 
